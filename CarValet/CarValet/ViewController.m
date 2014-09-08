@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Car.h"
+#import "HybridCar.h"
 
 @interface ViewController ()
 
@@ -35,6 +36,10 @@
     Car *otherCar = [[Car alloc] initWithMake:@"Honda" model:@"Accord" year:2010 fuelAmount:12.5f]; // new car created & variables set.
     
     [otherCar printCarInfo]; // printCarinfo method called on new car.
+    
+    HybridCar *myHybrid = [[HybridCar alloc] initWithMake:@"Toyota" model:@"Prius" year:2012 fuelAmount:8.3f MPG:42.0f];
+    
+    [myHybrid printCarInfo];
 }
 
 
